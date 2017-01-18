@@ -1,0 +1,59 @@
+
+
+\title{phd thesis}
+\author{
+        koulouris 
+}
+\date{\today}
+
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+
+\begin{abstract}
+This is the paper's abstract \ldots
+\end{abstract}
+
+\newpage
+\include{chapter1_LHC}%\label{chapter1}
+\newpage
+\include{chapter2_NSW_MM}%\label{chapter2}
+\newpage
+\include{chapter3_analysis}%\label{chapter3}
+\newpage
+\include{chapter4_design}%\label{chapter4}
+\newpage
+\include{chapter5_elx}% \label{chapter5}
+%elx overview, vmm details, vmm testing stuff, daq, monitoring, testbeam?
+\newpage
+\include{chapter6_sca}%\label{chapter6}
+%sca intro, ATLAS DAQ (felix, opc before), ATLAS DCS, OPC-UA, sca-HW, sca-sw,
+\newpage
+\include{chapter7_simulation}%\label{chapter7}
+%something for ansoft maxwell? kati ligo itan mono
+%isws kati psilo gia micromegas renderings? mpa...
+
+\newpage
+\section{Previous work}%\label{previous work}
+A much longer \LaTeXe{} example was written by Gil~\cite{Gil:02}.
+
+\bibliographystyle{abbrv}
+\bibliography{simple}
+
+\end{document}
+This is never printed
