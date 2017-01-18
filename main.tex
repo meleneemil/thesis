@@ -16,20 +16,31 @@
     urlcolor=black
 }
 \begin{document}
+
+%\pagestyle{empty} % Use for title page, or use 
 \maketitle
 \newpage
+
+%\pagenumbering{roman} % Roman numerals
+
 \tableofcontents
 \newpage
 \listoffigures
 \newpage
 \listoftables
 \newpage
-
+%\pagestyle{plain}
 \begin{abstract}
 This is the paper's abstract \ldots
 \end{abstract}
 
+\pagestyle{empty} % Use for title page, or use 
+ 
+
+\pagenumbering{arabic} % Roman numerals
+
 \newpage
+\setcounter{page}{1}
 \include{chapter1_LHC}%\label{chapter1}
 \newpage
 \include{chapter2_NSW_MM}%\label{chapter2}
@@ -39,14 +50,10 @@ This is the paper's abstract \ldots
 \include{chapter4_design}%\label{chapter4}
 \newpage
 \include{chapter5_elx}% \label{chapter5}
-%elx overview, vmm details, vmm testing stuff, daq, monitoring, testbeam?
 \newpage
 \include{chapter6_sca}%\label{chapter6}
-%sca intro, ATLAS DAQ (felix, opc before), ATLAS DCS, OPC-UA, sca-HW, sca-sw,
 \newpage
-\include{chapter7_simulation}%\label{chapter7}
-%something for ansoft maxwell? kati ligo itan mono
-%isws kati psilo gia micromegas renderings? mpa...
+\include{chapter7_simulation}%\label{chapter7}s
 
 \newpage
 \section{Previous work}%\label{previous work}
